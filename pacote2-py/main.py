@@ -84,7 +84,7 @@ def flood_fill(img, y0, x0, label, n_pixels):
     n_pixels += 1
     rows, cols, channels = img.shape
     
-    # Initialize component bounds
+    # initialize bounds
     top = y0
     left = x0
     bottom = y0
