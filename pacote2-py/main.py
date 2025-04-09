@@ -104,7 +104,7 @@ def flood_fill(img, y0, x0, label, n_pixels):
             bottom = max(bottom, sub_result['B'])
             right = max(right, sub_result['R'])
             
-            # update pixel count
+            #update pixel count
             n_pixels += sub_result['n_pixels']
     
     # return component information
