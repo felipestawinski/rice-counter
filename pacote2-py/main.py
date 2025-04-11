@@ -35,17 +35,17 @@ Valor de retorno: versão binarizada da img_in.'''
     # TODO: escreva o código desta função.
     # Dica/desafio: usando a função np.where, dá para fazer a binarização muito
     # rapidamente, e com apenas uma linha de código!
-    # return np.where(img >= threshold, 1.0, 0.0)
+    return np.where(img >= threshold, 1.0, 0.0)
 
     # método "alternativo" (mais lento):
-    rows, cols, channels = img.shape
-    for row in range(rows):
-        for col in range(cols):
-            if img[row, col] >= threshold:
-                img[row,col] = 1.0
-            else:
-                img[row,col] = 0.0
-    return img
+    # rows, cols, channels = img.shape
+    # for row in range(rows):
+    #     for col in range(cols):
+    #         if img[row, col] >= threshold:
+    #             img[row,col] = 1.0
+    #         else:
+    #             img[row,col] = 0.0
+    # return img
 
 #-------------------------------------------------------------------------------
 
